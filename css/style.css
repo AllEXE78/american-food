@@ -657,7 +657,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #3d2514;
-	flex: 1 1 auto;
+	
 }
 .order_item__text {
 	display: block;
