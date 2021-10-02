@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 0px 15px;
 }
 .header__container {	
-	padding: 53px 0px 0px 0px;
+	padding: 62px 0px 0px 0px;
 }
 .header_top-block{
 	display: flex;
@@ -118,11 +118,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding-right: 50px;	
 }
 
-
 .header__phone-block {
-	display: flex;
-	align-items:flex-start;	
-	justify-content: space-between;
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;	
+	padding: 5px 2px 0px 0px;
 }
 .header__phone-image {
 	display: block;
@@ -131,8 +131,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .header__phone-text {
 	padding: 0px 0px 0px 10px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	line-height: 2;
+	font-size: 16.7px;
+	line-height: 1;
 	font-weight: 700;
 	color: #3d2514;
 	flex: 0 1 285px;	
@@ -142,19 +142,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: flex;
 	justify-content: right;
 	justify-content: flex-end;
-	padding: 7px 0px 0px 0px;
+	padding: 3px 0px 0px 0px;
 }
 .header__menu-list {
 	display: flex;
-	justify-content: space-between;
-	flex: 0 1 477px;
+	justify-content: space-between;	
 	flex-wrap: wrap;
-	margin: -5px -10px;
+	margin: -5px -25px;
 
 }
 
 .header__menu-item{	
-	padding: 5px 10px;
+	padding: 5px 25px;
 	flex: 1 1 auto;
 }
 .header__menu-link {
@@ -166,13 +165,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	color: #3d2514;
-	border:3px dashed rgba(255,255,255,0);
-	padding: 0px 5px;
+	border-bottom:3px dashed rgba(255,255,255,0);	
 	transition: all 0.5s ease 0s;
 }
 
 .header__menu-link:hover{	
-	border:3px dashed #795135;	
+	border-bottom:3px dashed #795135;
+	
 }
 
 @media(max-width:767px){
@@ -213,13 +212,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .top-fullscreen__body {
 	position: relative;
 	z-index: 5;
-	padding: 211px 0px 0px 0px;
+	padding: 295px 0px 0px 0px;
 	display: flex;
-	justify-content: space-between;
-	
+	justify-content: space-between;	
 }
+
 .top-fullscreen__column {
-	flex: 0 1 100%;	
+	flex: 0 1 100%;
+	
 }
 .top-fullscreen__slogan {
 	display: inline-block;
@@ -229,7 +229,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #3d2514;
-	padding: 16px 20px;
+	padding: 10px 18px 13px 18px;
 	border:3px dashed #3d2514;
 }
 .top-fullscreen__title {
@@ -240,7 +240,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-transform: uppercase;
 	text-shadow: 4px 5px 0px #fee8bc;
 	color: #3d2514;
-	margin-top: 24px;
+	margin-top: 16px;
 }
 .top-fullscreen__subtitle {
 	font-family: 'Alfa Slab One';
@@ -250,7 +250,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-transform: uppercase;
 	text-shadow: 4px 5px 0px #fee8bc;
 	color: #3d2514;
-	margin-top: 27px;
+	margin-top: 7px;
 }
 .top-fullscreen__image-box {
 	position: relative;
@@ -262,15 +262,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
+	top: -77px;
+	left: -34px;
 	object-fit: contain;
 }
 .top-fullscreen__red-price {
 	position: absolute;
 	z-index: 6;
-	top: 67%;
-	left: 2%;
+	top: 54%;
+	left: -3%;
 }
 
 .top-fullscreen__price {
@@ -350,6 +350,38 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	.top-fullscreen__body{
 		flex-wrap: wrap;
 	}
+	.top-fullscreen__red-price {		
+		top: 45%;
+		left: 29%;
+	}
+	.top-fullscreen__image-box {		
+		padding: 0 0 50% 0;	
+	}
+	.top-fullscreen__image {	
+		top: -120px;
+		left: 100px;		
+	}
+
+}
+@media(max-width:767px){
+	.top-fullscreen__image-box {		
+		padding: 0 0 70% 0;	
+	}	
+	
+	.top-fullscreen__red-price {		
+		top: 65%;
+		left: 6%;
+	}
+	
+	.top-fullscreen__image {	
+		top: 0px;
+		left: 0px;		
+	}
+
+	.top-fullscreen__body {
+		padding: 200px 0px 0px 0px;
+	}
+	
 
 }
 @media(max-width:580px){
@@ -477,14 +509,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .try-burger__most-popular {
 	position: relative;
-	padding-bottom: 45%;
+	padding-bottom: 50%;
 	border-radius: 10px;
 	overflow: hidden;
 }
 .try-burger__title-block {
 	position: relative;
 	z-index: 5;
-	padding: 31px 24px;
+	padding: 20px 26px;
 }
 .title-block {	
 	font-family: 'Bebas Neue';
@@ -495,10 +527,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .title-block__top-title {
 	font-size: 25px;
-	line-height: 37px;
+	line-height: 1.2;
 }
-.title-block__title {
+.title-block__title {	
 	font-size: 41.7px;
+	line-height: 1;
 }
 .try-burger__cover {
 	border: 1px solid blue;
@@ -540,7 +573,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		flex: 1 1 100%;
 		padding: 15px 0px;
 	}
-	
+	.try-burger__more-item{
+		padding-bottom: 20%;
+	}
+
 }
 @media(max-width:767px){
 	.try-burger__container {
@@ -578,7 +614,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* ---------------------- choose_enjoy ------------------ */
 
 .choose_enjoy {
-	margin-top: 71px;
+	margin-top: 70px;
 }
 .choose_enjoy__container {
 	margin: 0 auto;	
@@ -594,11 +630,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #3d2514;
-	padding: 14px 22px;
+	padding: 10px 22px;
 	background-color: #ffc045;
 }
 .choose_enjoy__title {
-	margin-top: 39px;
+	margin-top: 35px;
 	font-family: 'Alfa Slab One';
 	font-size: 50px;
 	line-height: 1.2;
@@ -610,7 +646,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: block;
 	margin: 0 auto;
 	max-width: 85%;
-	margin-top: 31px;
+	margin-top: 12px;
 	font-family: Montserrat;
 	font-size: 16.7px;
 	line-height: 29px;
@@ -651,17 +687,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	object-fit: contain;
 }
 .order_item__title {	
-	margin-top: 22px;
+	margin-top: 18px;
 	font-size: 37.5px;
 	line-height: 1;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #3d2514;
-	
+	/* flex: 1 1 auto; */
 }
 .order_item__text {
 	display: block;
-	margin-top: 20px;
+	margin-top: 14px;
 	font-family: Montserrat;
 	font-size: 16.7px;
 	line-height: 20px;
@@ -694,7 +730,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	.choose_enjoy__order-column {
 		flex: 1 1 100%;
 	}
-		
+	.order_item__image-box {
+		padding-bottom: 60%;
+	}
+	
 	.order_item__title {	
 		margin-top: -10px;		
 	}
@@ -719,6 +758,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		margin-top: 25px;		
 		font-size: 40px;		
 	}
+	.order_item__image-box {
+		padding-bottom: 85%;
+	}
+	
 }
 
 /* ---------------------------------------------------  */
